@@ -1,0 +1,12 @@
+1. npm install bootstrap-sass ng2-bootstrap --save
+
+2. Editing the angular-cli.json file by adding the following code,
+
+"styles": [
+        "styles.css",
+        "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss"
+      ],
+
+3. Editing the src\app\app.component.html file by adding the following code,
+
+<button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="form.invalid">Submit</button>
